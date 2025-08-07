@@ -26,6 +26,7 @@
     letter-spacing: 0.12em;
     color: #1de9b6;
     text-shadow: 0 0 8px #00ffc8aa;
+    position: relative;
   }
   nav {
     background: #122d4a;
@@ -48,6 +49,24 @@
     color: #1de9b6;
     transform: scale(1.05);
     background: #073047aa;
+  }
+  .translate-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: #1de9b6;
+    color: #0a1624;
+    padding: 8px 14px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 0 15px #1de9b6aa;
+    transition: background 0.35s ease, box-shadow 0.3s ease;
+  }
+  .translate-btn:hover {
+    background: #00c49a;
+    box-shadow: 0 0 25px #00c49aaa;
   }
   main {
     max-width: 920px;
@@ -125,11 +144,19 @@
     main {
       padding: 0 15px;
     }
+    .translate-btn {
+      position: static;
+      margin: 10px auto;
+      display: block;
+    }
   }
 </style>
 </head>
 <body>
-<header>GRAY_WHALE</header>
+<header>
+  GRAY_WHALE
+  <button class="translate-btn" onclick="window.open('https://translate.google.com/translate?hl=&sl=ru&tl=en&u=https://kotarimorm.github.io/gray_whale_site/', '_blank')">Translate to English</button>
+</header>
 <nav>
   <a href="#about">О компании</a>
   <a href="#products">Продукты</a>
@@ -170,7 +197,7 @@
   <section id="support">
     <h2>Поддержать проект</h2>
     <p>Если вы хотите поддержать наше развитие и помочь создавать ещё более мощные и полезные продукты, вы можете перевести средства на карту ПриватБанка:</p>
-    <p><strong>Номер карты:</strong> 5167 8032 8615 4146<br /><strong>Получатель:</strong> GRAY_WHLAE COMPANY</p>
+    <p><strong>Номер карты:</strong> 5167 8032 8615 4146<br /><strong>Получатель:</strong> GRAY_WHALE COMPANY</p>
     <p>Спасибо за вашу поддержку! Каждая помощь важна для нас.</p>
     <a class="btn-support" href="https://next.privat24.ua/money-transfer/card" target="_blank" rel="noopener">Перевести на Приват24</a>
   </section>
