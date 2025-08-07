@@ -1,181 +1,128 @@
-<!DOCTYPE html>
-<html lang="ru">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>GRAY_WHALE - Инновационная Кибербезопасность</title>
-<style>
-  body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: #0a1624;
-    color: #cbd5e1;
-    margin: 0; padding: 0;
-  }
-  header {
-    background: #0f2c4c;
-    padding: 20px;
-    text-align: center;
-    font-size: 2.4em;
-    font-weight: 900;
-    letter-spacing: 0.12em;
-    color: #1de9b6;
-    text-shadow: 0 0 8px #00ffc8aa;
-  }
-  nav {
-    background: #122d4a;
-    display: flex;
-    justify-content: center;
-    gap: 35px;
-    padding: 12px 0;
-    box-shadow: inset 0 -2px 6px #1de9b6aa;
-  }
-  nav a {
-    color: #a0aec0;
-    text-decoration: none;
-    font-weight: 700;
-    font-size: 1.1em;
-    transition: color 0.3s ease, transform 0.2s ease;
-    padding: 6px 10px;
-    border-radius: 6px;
-  }
-  nav a:hover {
-    color: #1de9b6;
-    transform: scale(1.05);
-    background: #073047aa;
-  }
-  main {
-    max-width: 920px;
-    margin: 30px auto;
-    padding: 0 25px;
-  }
-  section {
-    margin-bottom: 50px;
-    background: #122d4a;
-    padding: 20px 25px;
-    border-radius: 12px;
-    box-shadow: 0 4px 14px #000000aa;
-    transition: box-shadow 0.3s ease;
-  }
-  section:hover {
-    box-shadow: 0 8px 20px #1de9b6cc;
-  }
-  h2 {
-    border-bottom: 3px solid #1de9b6;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-    color: #00ffc8;
-    font-weight: 800;
-    font-size: 2em;
-    text-shadow: 0 0 5px #00fffca0;
-  }
-  h3 {
-    color: #53f9d8;
-    margin-top: 0;
-    font-weight: 700;
-    font-size: 1.5em;
-    text-shadow: 0 0 3px #00fffca0;
-  }
-  p {
-    line-height: 1.6;
-    font-size: 1.15em;
-    color: #cbd5e1dd;
-  }
-  .product {
-    margin-bottom: 20px;
-  }
-  .btn-support {
-    background: #1de9b6;
-    color: #0a1624;
-    padding: 14px 26px;
-    border: none;
-    border-radius: 10px;
-    font-size: 1.3em;
-    font-weight: 700;
-    cursor: pointer;
-    transition: background 0.35s ease, box-shadow 0.3s ease;
-    display: inline-block;
-    margin-top: 15px;
-    text-decoration: none;
-    box-shadow: 0 0 15px #1de9b6aa;
-  }
-  .btn-support:hover {
-    background: #00c49a;
-    box-shadow: 0 0 25px #00c49aaa;
-  }
-  footer {
-    background: #0f2c4c;
-    color: #9ca3afcc;
-    text-align: center;
-    padding: 18px 10px;
-    font-size: 1em;
-    letter-spacing: 0.05em;
-    user-select: none;
-  }
-  @media (max-width: 600px) {
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GRAY_WHALE - Инновационная Кибербезопасность</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Компания GRAY_WHALE создает инновационные решения в области кибербезопасности: антивирус нового поколения, удалённое управление Whale_Distance и модульная система Rusty_Window. Защита от RAT и мощные инструменты для безопасности." />
+  <meta name="keywords" content="антивирус, кибербезопасность, GRAY_WHALE, удалённое управление, Whale Distance, Rusty Window, защита от RAT, антибат-бат, модульная система" />
+  <meta name="author" content="GRAY_WHALE Team" />
+
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #0a1624;
+      color: #cbd5e1;
+      margin: 0; padding: 0;
+    }
+    header {
+      background: #0f2c4c;
+      padding: 20px;
+      text-align: center;
+      font-size: 2.4em;
+      font-weight: 900;
+      letter-spacing: 0.12em;
+      color: #1de9b6;
+      text-shadow: 0 0 8px #00ffc8aa;
+    }
     nav {
-      flex-direction: column;
-      gap: 18px;
+      background: #122d4a;
+      display: flex;
+      justify-content: center;
+      gap: 35px;
+      padding: 12px 0;
+      box-shadow: inset 0 -2px 6px #1de9b6aa;
+    }
+    nav a {
+      color: #a0aec0;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1.1em;
+      transition: color 0.3s ease, transform 0.2s ease;
+      padding: 6px 10px;
+      border-radius: 6px;
+    }
+    nav a:hover {
+      color: #1de9b6;
+      transform: scale(1.05);
+      background: #073047aa;
     }
     main {
-      padding: 0 15px;
+      max-width: 920px;
+      margin: 30px auto;
+      padding: 0 25px;
     }
-  }
-</style>
+    section {
+      margin-bottom: 50px;
+      background: #122d4a;
+      padding: 20px 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 14px #000000aa;
+      transition: box-shadow 0.3s ease;
+    }
+    section:hover {
+      box-shadow: 0 8px 20px #1de9b6cc;
+    }
+    h2 {
+      border-bottom: 3px solid #1de9b6;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+      color: #00ffc8;
+      font-weight: 800;
+      font-size: 2em;
+      text-shadow: 0 0 5px #00fffca0;
+    }
+    h3 {
+      color: #53f9d8;
+      margin-top: 0;
+      font-weight: 700;
+      font-size: 1.5em;
+      text-shadow: 0 0 3px #00fffca0;
+    }
+    p {
+      line-height: 1.6;
+      font-size: 1.15em;
+      color: #cbd5e1dd;
+    }
+    .product {
+      margin-bottom: 20px;
+    }
+    .btn-support {
+      background: #1de9b6;
+      color: #0a1624;
+      padding: 14px 26px;
+      border: none;
+      border-radius: 10px;
+      font-size: 1.3em;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background 0.35s ease, box-shadow 0.3s ease;
+      display: inline-block;
+      margin-top: 15px;
+      text-decoration: none;
+      box-shadow: 0 0 15px #1de9b6aa;
+    }
+    .btn-support:hover {
+      background: #00c49a;
+      box-shadow: 0 0 25px #00c49aaa;
+    }
+    footer {
+      background: #0f2c4c;
+      color: #9ca3afcc;
+      text-align: center;
+      padding: 18px 10px;
+      font-size: 1em;
+      letter-spacing: 0.05em;
+      user-select: none;
+    }
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        gap: 18px;
+      }
+      main {
+        padding: 0 15px;
+      }
+    }
+  </style>
 </head>
-<body>
-<header>GRAY_WHALE</header>
-<nav>
-  <a href="#about">О компании</a>
-  <a href="#products">Продукты</a>
-  <a href="#news">Новости</a>
-  <a href="#support">Поддержать</a>
-  <a href="#contacts">Контакты</a>
-</nav>
-<main>
-  <section id="about">
-    <h2>О компании GRAY_WHALE</h2>
-    <p>Мы создаём инновационные решения в области кибербезопасности, чтобы защитить вас от угроз и обеспечить свободу цифрового пространства. Наша миссия — сделать технологии доступными и понятными каждому.</p>
-  </section>
-
-  <section id="products">
-    <h2>Наши продукты</h2>
-
-    <div class="product">
-      <h3>Whale_Distance</h3>
-      <p>Средство удалённого доступа с функциями блокировки управления, защиты от RAT и безопасности ваших данных.</p>
-    </div>
-
-    <div class="product">
-      <h3>GRAY_WHALE ANTIVIRUS</h3>
-      <p>Антивирус нового поколения с уникальной функцией антибат-бат и планируемым разделом растермаузер для быстрого восстановления системы.</p>
-    </div>
-
-    <div class="product">
-      <h3>GRAY_WHALE RUSTY_WINDOW</h3>
-      <p>Модульная система с возможностью установки и автоматического обновления модулей через защищённый сайт, обеспечивающая максимальную гибкость.</p>
-    </div>
-  </section>
-
-  <section id="news">
-    <h2>Новости и планы</h2>
-    <p>Мы активно работаем над новыми функциями и готовим запуск раздела растермаузер в ближайшем будущем. Следите за обновлениями и станьте частью нашей истории.</p>
-  </section>
-
-  <section id="support">
-    <h2>Поддержать проект</h2>
-    <p>Если вы хотите поддержать наше развитие и помочь создавать ещё более мощные и полезные продукты, вы можете перевести средства на карту ПриватБанка:</p>
-    <p><strong>Номер карты:</strong> 5167 8032 8615 4146<br /><strong>Получатель:</strong> GRAY_WHLAE COMPANY</p>
-    <p>Спасибо за вашу поддержку! Каждая помощь важна для нас.</p>
-    <a class="btn-support" href="https://next.privat24.ua/money-transfer/card" target="_blank" rel="noopener">Перевести на Приват24</a>
-  </section>
-
-  <section id="contacts">
-    <h2>Контакты</h2>
-    <p>Telegram: <a href="https://t.me/GRAY_WHALE_company" target="_blank" rel="noopener" style="color:#1de9b6;">@GRAY_WHALE_company</a></p>
-  </section>
-</main>
-<footer>
-  &copy; 2025 GRAY_WHALE. Все права защищены.
-</footer>
-</body>
-</html>
