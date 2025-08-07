@@ -5,17 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>GRAY_WHALE - Инновационная Кибербезопасность</title>
 
-<!-- SEO мета-теги -->
-<meta name="description" content="Компания GRAY_WHALE создает инновационные решения в области кибербезопасности: антивирус нового поколения, удалённое управление Whale_Distance и модульная система Rusty_Window. Защита от RAT и мощные инструменты для безопасности." />
-<meta name="keywords" content="антивирус, кибербезопасность, GRAY_WHALE, удалённое управление, Whale Distance, Rusty Window, защита от RAT, антибат-бат, модульная система" />
-<meta name="author" content="GRAY_WHALE Team" />
-
 <style>
   body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: #0a1624;
     color: #cbd5e1;
-    margin: 0; padding: 0;
+    margin: 0; padding: 0 25px 40px 25px;
   }
   header {
     background: #0f2c4c;
@@ -71,7 +66,6 @@
   main {
     max-width: 920px;
     margin: 30px auto;
-    padding: 0 25px;
   }
   section {
     margin-bottom: 50px;
@@ -136,6 +130,9 @@
     letter-spacing: 0.05em;
     user-select: none;
   }
+  .hidden {
+    display: none;
+  }
   @media (max-width: 600px) {
     nav {
       flex-direction: column;
@@ -151,64 +148,135 @@
     }
   }
 </style>
+
 </head>
 <body>
 <header>
   GRAY_WHALE
-  <button class="translate-btn" onclick="window.open('https://translate.google.com/translate?hl=&sl=ru&tl=en&u=https://kotarimorm.github.io/gray_whale_site/', '_blank')">Translate to English</button>
+  <button class="translate-btn" id="toggleLangBtn">Switch to English</button>
 </header>
 <nav>
-  <a href="#about">О компании</a>
-  <a href="#products">Продукты</a>
-  <a href="#news">Новости</a>
-  <a href="#support">Поддержать</a>
-  <a href="#contacts">Контакты</a>
+  <a href="#about" class="lang-ru">О компании</a>
+  <a href="#about" class="lang-en hidden">About</a>
+  <a href="#products" class="lang-ru">Продукты</a>
+  <a href="#products" class="lang-en hidden">Products</a>
+  <a href="#news" class="lang-ru">Новости</a>
+  <a href="#news" class="lang-en hidden">News</a>
+  <a href="#support" class="lang-ru">Поддержать</a>
+  <a href="#support" class="lang-en hidden">Support</a>
+  <a href="#contacts" class="lang-ru">Контакты</a>
+  <a href="#contacts" class="lang-en hidden">Contacts</a>
 </nav>
+
 <main>
   <section id="about">
-    <h2>О компании GRAY_WHALE</h2>
-    <p>Мы создаём инновационные решения в области кибербезопасности, чтобы защитить вас от угроз и обеспечить свободу цифрового пространства. Наша миссия — сделать технологии доступными и понятными каждому.</p>
+    <div class="lang-ru">
+      <h2>О компании GRAY_WHALE</h2>
+      <p>Мы создаём инновационные решения в области кибербезопасности, чтобы защитить вас от угроз и обеспечить свободу цифрового пространства. Наша миссия — сделать технологии доступными и понятными каждому.</p>
+    </div>
+    <div class="lang-en hidden">
+      <h2>About GRAY_WHALE</h2>
+      <p>We create innovative solutions in cybersecurity to protect you from threats and ensure digital freedom. Our mission is to make technology accessible and understandable for everyone.</p>
+    </div>
   </section>
 
   <section id="products">
-    <h2>Наши продукты</h2>
-
-    <div class="product">
-      <h3>Whale_Distance</h3>
-      <p>Средство удалённого доступа с функциями блокировки управления, защиты от RAT и безопасности ваших данных.</p>
+    <div class="lang-ru">
+      <h2>Наши продукты</h2>
+      <div class="product">
+        <h3>Whale_Distance</h3>
+        <p>Средство удалённого доступа с функциями блокировки управления, защиты от RAT и безопасности ваших данных.</p>
+      </div>
+      <div class="product">
+        <h3>GRAY_WHALE ANTIVIRUS</h3>
+        <p>Антивирус нового поколения с уникальной функцией антибат-бат и планируемым разделом растермаузер для быстрого восстановления системы.</p>
+      </div>
+      <div class="product">
+        <h3>GRAY_WHALE RUSTY_WINDOW</h3>
+        <p>Модульная система с возможностью установки и автоматического обновления модулей через защищённый сайт, обеспечивающая максимальную гибкость.</p>
+      </div>
     </div>
-
-    <div class="product">
-      <h3>GRAY_WHALE ANTIVIRUS</h3>
-      <p>Антивирус нового поколения с уникальной функцией антибат-бат и планируемым разделом растермаузер для быстрого восстановления системы.</p>
-    </div>
-
-    <div class="product">
-      <h3>GRAY_WHALE RUSTY_WINDOW</h3>
-      <p>Модульная система с возможностью установки и автоматического обновления модулей через защищённый сайт, обеспечивающая максимальную гибкость.</p>
+    <div class="lang-en hidden">
+      <h2>Our Products</h2>
+      <div class="product">
+        <h3>Whale_Distance</h3>
+        <p>Remote access tool with control blocking, RAT protection, and data security features.</p>
+      </div>
+      <div class="product">
+        <h3>GRAY_WHALE ANTIVIRUS</h3>
+        <p>Next-gen antivirus with a unique anti-bat-bat feature and planned RasterMouser section for fast system recovery.</p>
+      </div>
+      <div class="product">
+        <h3>GRAY_WHALE RUSTY_WINDOW</h3>
+        <p>Modular system with installation and automatic updates of modules via a secure site, providing maximum flexibility.</p>
+      </div>
     </div>
   </section>
 
   <section id="news">
-    <h2>Новости и планы</h2>
-    <p>Мы активно работаем над новыми функциями и готовим запуск раздела растермаузер в ближайшем будущем. Следите за обновлениями и станьте частью нашей истории.</p>
+    <div class="lang-ru">
+      <h2>Новости и планы</h2>
+      <p>Мы активно работаем над новыми функциями и готовим запуск раздела растермаузер в ближайшем будущем. Следите за обновлениями и станьте частью нашей истории.</p>
+    </div>
+    <div class="lang-en hidden">
+      <h2>News and Plans</h2>
+      <p>We are actively working on new features and preparing to launch the RasterMouser section soon. Stay tuned and become part of our story.</p>
+    </div>
   </section>
 
   <section id="support">
-    <h2>Поддержать проект</h2>
-    <p>Если вы хотите поддержать наше развитие и помочь создавать ещё более мощные и полезные продукты, вы можете перевести средства на карту ПриватБанка:</p>
-    <p><strong>Номер карты:</strong> 5167 8032 8615 4146<br /><strong>Получатель:</strong> GRAY_WHALE COMPANY</p>
-    <p>Спасибо за вашу поддержку! Каждая помощь важна для нас.</p>
-    <a class="btn-support" href="https://next.privat24.ua/money-transfer/card" target="_blank" rel="noopener">Перевести на Приват24</a>
+    <div class="lang-ru">
+      <h2>Поддержать проект</h2>
+      <p>Если вы хотите поддержать наше развитие и помочь создавать ещё более мощные и полезные продукты, вы можете перевести средства на карту ПриватБанка:</p>
+      <p><strong>Номер карты:</strong> 5167 8032 8615 4146<br /><strong>Получатель:</strong> GRAY_WHALE COMPANY</p>
+      <p>Спасибо за вашу поддержку! Каждая помощь важна для нас.</p>
+      <a class="btn-support" href="https://next.privat24.ua/money-transfer/card" target="_blank" rel="noopener">Перевести на Приват24</a>
+    </div>
+    <div class="lang-en hidden">
+      <h2>Support the Project</h2>
+      <p>If you want to support our development and help create even more powerful and useful products, you can transfer funds to the PrivatBank card:</p>
+      <p><strong>Card Number:</strong> 5167 8032 8615 4146<br /><strong>Recipient:</strong> GRAY_WHALE COMPANY</p>
+      <p>Thank you for your support! Every bit helps.</p>
+      <a class="btn-support" href="https://next.privat24.ua/money-transfer/card" target="_blank" rel="noopener">Transfer via Privat24</a>
+    </div>
   </section>
 
   <section id="contacts">
-    <h2>Контакты</h2>
-    <p>Telegram: <a href="https://t.me/GRAY_WHALE_company" target="_blank" rel="noopener" style="color:#1de9b6;">@GRAY_WHALE_company</a></p>
+    <div class="lang-ru">
+      <h2>Контакты</h2>
+      <p>Telegram: <a href="https://t.me/GRAY_WHALE_company" target="_blank" rel="noopener" style="color:#1de9b6;">@GRAY_WHALE_company</a></p>
+    </div>
+    <div class="lang-en hidden">
+      <h2>Contacts</h2>
+      <p>Telegram: <a href="https://t.me/GRAY_WHALE_company" target="_blank" rel="noopener" style="color:#1de9b6;">@GRAY_WHALE_company</a></p>
+    </div>
   </section>
 </main>
+
 <footer>
-  &copy; 2025 GRAY_WHALE. Все права защищены.
+  &copy; 2025 GRAY_WHALE. All rights reserved.
 </footer>
+
+<script>
+  const toggleBtn = document.getElementById('toggleLangBtn');
+  const ruElements = document.querySelectorAll('.lang-ru');
+  const enElements = document.querySelectorAll('.lang-en');
+  let isRussian = true;
+
+  toggleBtn.addEventListener('click', () => {
+    if(isRussian) {
+      ruElements.forEach(el => el.classList.add('hidden'));
+      enElements.forEach(el => el.classList.remove('hidden'));
+      toggleBtn.textContent = 'Переключить на русский';
+      isRussian = false;
+    } else {
+      enElements.forEach(el => el.classList.add('hidden'));
+      ruElements.forEach(el => el.classList.remove('hidden'));
+      toggleBtn.textContent = 'Switch to English';
+      isRussian = true;
+    }
+  });
+</script>
+
 </body>
 </html>
