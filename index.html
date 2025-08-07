@@ -1,156 +1,302 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>GRAY_WHALE</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #0d0d0d;
-      color: white;
-      text-align: center;
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>GRAY_WHALE - Инновационная Кибербезопасность</title>
+
+<!-- SEO мета-теги -->
+<meta name="description" content="Компания GRAY_WHALE создает инновационные решения в области кибербезопасности: антивирус нового поколения, удалённое управление Whale_Distance и модульная система Rusty_Window. Защита от RAT и мощные инструменты для безопасности." />
+<meta name="keywords" content="антивирус, кибербезопасность, GRAY_WHALE, удалённое управление, Whale Distance, Rusty Window, защита от RAT, антибат-бат, модульная система" />
+<meta name="author" content="GRAY_WHALE Team" />
+
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #0a1624;
+    color: #cbd5e1;
+    margin: 0; padding: 0;
+  }
+  header {
+    background: #0f2c4c;
+    padding: 20px;
+    text-align: center;
+    font-size: 2.4em;
+    font-weight: 900;
+    letter-spacing: 0.12em;
+    color: #1de9b6;
+    text-shadow: 0 0 8px #00ffc8aa;
+    position: relative;
+  }
+  nav {
+    background: #122d4a;
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    padding: 12px 0;
+    box-shadow: inset 0 -2px 6px #1de9b6aa;
+  }
+  nav a {
+    color: #a0aec0;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.1em;
+    transition: color 0.3s ease, transform 0.2s ease;
+    padding: 6px 10px;
+    border-radius: 6px;
+  }
+  nav a:hover {
+    color: #1de9b6;
+    transform: scale(1.05);
+    background: #073047aa;
+  }
+  main {
+    max-width: 920px;
+    margin: 30px auto;
+    padding: 0 25px;
+  }
+  section {
+    margin-bottom: 50px;
+    background: #122d4a;
+    padding: 20px 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 14px #000000aa;
+    transition: box-shadow 0.3s ease;
+  }
+  section:hover {
+    box-shadow: 0 8px 20px #1de9b6cc;
+  }
+  h2 {
+    border-bottom: 3px solid #1de9b6;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    color: #00ffc8;
+    font-weight: 800;
+    font-size: 2em;
+    text-shadow: 0 0 5px #00fffca0;
+  }
+  h3 {
+    color: #53f9d8;
+    margin-top: 0;
+    font-weight: 700;
+    font-size: 1.5em;
+    text-shadow: 0 0 3px #00fffca0;
+  }
+  p {
+    line-height: 1.6;
+    font-size: 1.15em;
+    color: #cbd5e1dd;
+  }
+  .product {
+    margin-bottom: 20px;
+  }
+  .btn-support {
+    background: #1de9b6;
+    color: #0a1624;
+    padding: 14px 26px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.3em;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.35s ease, box-shadow 0.3s ease;
+    display: inline-block;
+    margin-top: 15px;
+    text-decoration: none;
+    box-shadow: 0 0 15px #1de9b6aa;
+  }
+  .btn-support:hover {
+    background: #00c49a;
+    box-shadow: 0 0 25px #00c49aaa;
+  }
+  footer {
+    background: #0f2c4c;
+    color: #9ca3afcc;
+    text-align: center;
+    padding: 18px 10px;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    user-select: none;
+  }
+  #lang-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: #1de9b6;
+    border: none;
+    color: #0a1624;
+    padding: 10px 18px;
+    font-weight: 700;
+    font-size: 0.9em;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 0 15px #1de9b6aa;
+    transition: background 0.3s ease;
+  }
+  #lang-btn:hover {
+    background: #00c49a;
+    box-shadow: 0 0 25px #00c49aaa;
+  }
+  @media (max-width: 600px) {
+    nav {
+      flex-direction: column;
+      gap: 18px;
     }
-    header {
-      padding: 20px;
-      background-color: #1a1a1a;
+    main {
+      padding: 0 15px;
     }
-    nav a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
-    }
-    section {
-      padding: 40px 20px;
-    }
-    footer {
-      padding: 20px;
-      background-color: #1a1a1a;
-    }
-    button#lang-btn {
-      position: fixed;
+    #lang-btn {
       top: 10px;
       right: 10px;
-      background: #00bfff;
-      color: white;
-      border: none;
-      padding: 8px 12px;
-      cursor: pointer;
+      padding: 8px 14px;
+      font-size: 0.85em;
     }
-  </style>
+  }
+</style>
 </head>
 <body>
-  <header>
-    <h1 data-key="title">GRAY_WHALE</h1>
-    <nav>
-      <a href="#about" data-key="about">О нас</a>
-      <a href="#products" data-key="products">Продукты</a>
-      <a href="#news" data-key="news">Новости</a>
-      <a href="#support" data-key="support">Поддержка</a>
-      <a href="#contacts" data-key="contacts">Контакты</a>
-    </nav>
-  </header>
-
+<header>
+  GRAY_WHALE
+  <button id="lang-btn">EN</button>
+</header>
+<nav>
+  <a href="#about" data-key="nav_about">О компании</a>
+  <a href="#products" data-key="nav_products">Продукты</a>
+  <a href="#news" data-key="nav_news">Новости</a>
+  <a href="#support" data-key="nav_support">Поддержать</a>
+  <a href="#contacts" data-key="nav_contacts">Контакты</a>
+</nav>
+<main>
   <section id="about">
-    <h2 data-key="about-title">О компании</h2>
-    <p data-key="about-text">GRAY_WHALE — инновационная компания, создающая передовые решения в сфере кибербезопасности.</p>
+    <h2 data-key="about_title">О компании GRAY_WHALE</h2>
+    <p data-key="about_text">Мы создаём инновационные решения в области кибербезопасности, чтобы защитить вас от угроз и обеспечить свободу цифрового пространства. Наша миссия — сделать технологии доступными и понятными каждому.</p>
   </section>
 
   <section id="products">
-    <h2 data-key="products-title">Наши продукты</h2>
-    <ul>
-      <li>Whale_Distance — удалённый доступ с защитой</li>
-      <li>GRAY_WHALE ANTIVIRUS — уникальный антивирус</li>
-      <li>GRAY_WHALE RUSTY_WINDOW — модульная система</li>
-    </ul>
+    <h2 data-key="products_title">Наши продукты</h2>
+
+    <div class="product">
+      <h3 data-key="product1_title">Whale_Distance</h3>
+      <p data-key="product1_text">Средство удалённого доступа с функциями блокировки управления, защиты от RAT и безопасности ваших данных.</p>
+    </div>
+
+    <div class="product">
+      <h3 data-key="product2_title">GRAY_WHALE ANTIVIRUS</h3>
+      <p data-key="product2_text">Антивирус нового поколения с уникальной функцией антибат-бат и планируемым разделом растермаузер для быстрого восстановления системы.</p>
+    </div>
+
+    <div class="product">
+      <h3 data-key="product3_title">GRAY_WHALE RUSTY_WINDOW</h3>
+      <p data-key="product3_text">Модульная система с возможностью установки и автоматического обновления модулей через защищённый сайт, обеспечивающая максимальную гибкость.</p>
+    </div>
   </section>
 
   <section id="news">
-    <h2 data-key="news-title">Новости</h2>
-    <p data-key="news-text">Скоро мы выпустим новое обновление для всех наших продуктов!</p>
+    <h2 data-key="news_title">Новости и планы</h2>
+    <p data-key="news_text">Мы активно работаем над новыми функциями и готовим запуск раздела растермаузер в ближайшем будущем. Следите за обновлениями и станьте частью нашей истории.</p>
   </section>
 
   <section id="support">
-    <h2 data-key="support-title">Техническая поддержка</h2>
-    <p data-key="support-text">Вы можете связаться с нами через онлайн-чат внизу экрана.</p>
+    <h2 data-key="support_title">Поддержать проект</h2>
+    <p data-key="support_text1">Если вы хотите поддержать наше развитие и помочь создавать ещё более мощные и полезные продукты, вы можете перевести средства на карту ПриватБанка:</p>
+    <p data-key="support_text2"><strong>Номер карты:</strong> 5167 8032 8615 4146<br /><strong>Получатель:</strong> GRAY_WHLAE COMPANY</p>
+    <p data-key="support_text3">Спасибо за вашу поддержку! Каждая помощь важна для нас.</p>
+    <a class="btn-support" href="https://next.privat24.ua/money-transfer/card" target="_blank" rel="noopener" data-key="support_button">Перевести на Приват24</a>
   </section>
 
   <section id="contacts">
-    <h2 data-key="contacts-title">Контакты</h2>
-    <p>Email: support@graywhale.com</p>
+    <h2 data-key="contacts_title">Контакты</h2>
+    <p data-key="contacts_text">Telegram: <a href="https://t.me/GRAY_WHALE_company" target="_blank" rel="noopener" style="color:#1de9b6;">@GRAY_WHALE_company</a></p>
   </section>
+</main>
+<footer>
+  &copy; 2025 GRAY_WHALE. Все права защищены.
+</footer>
 
-  <footer>
-    &copy; 2025 GRAY_WHALE. Все права защищены.
-  </footer>
+<script>
+  const translations = {
+    en: {
+      nav_about: "About",
+      nav_products: "Products",
+      nav_news: "News",
+      nav_support: "Support",
+      nav_contacts: "Contacts",
+      about_title: "About GRAY_WHALE",
+      about_text: "We create innovative cybersecurity solutions to protect you from threats and ensure digital freedom. Our mission is to make technology accessible and understandable for everyone.",
+      products_title: "Our Products",
+      product1_title: "Whale_Distance",
+      product1_text: "Remote access tool with control blocking, RAT protection, and data security features.",
+      product2_title: "GRAY_WHALE ANTIVIRUS",
+      product2_text: "Next-gen antivirus with unique anti-bat-bat function and planned rastermouzer section for quick system recovery.",
+      product3_title: "GRAY_WHALE RUSTY_WINDOW",
+      product3_text: "Modular system with module installation and automatic updates via secure site, providing maximum flexibility.",
+      news_title: "News and Plans",
+      news_text: "We are actively working on new features and preparing to launch the rastermouzer section soon. Stay tuned and be part of our story.",
+      support_title: "Support the Project",
+      support_text1: "If you want to support our development and help create even more powerful and useful products, you can transfer funds to a PrivatBank card:",
+      support_text2: "<strong>Card Number:</strong> 5167 8032 8615 4146<br /><strong>Recipient:</strong> GRAY_WHLAE COMPANY",
+      support_text3: "Thank you for your support! Every help matters to us.",
+      support_button: "Transfer via Privat24",
+      contacts_title: "Contacts",
+      contacts_text: 'Telegram: <a href="https://t.me/GRAY_WHALE_company" target="_blank" rel="noopener" style="color:#1de9b6;">@GRAY_WHALE_company</a>'
+    },
+    ru: {
+      nav_about: "О компании",
+      nav_products: "Продукты",
+      nav_news: "Новости",
+      nav_support: "Поддержать",
+      nav_contacts: "Контакты",
+      about_title: "О компании GRAY_WHALE",
+      about_text: "Мы создаём инновационные решения в области кибербезопасности, чтобы защитить вас от угроз и обеспечить свободу цифрового пространства. Наша миссия — сделать технологии доступными и понятными каждому.",
+      products_title: "Наши продукты",
+      product1_title: "Whale_Distance",
+      product1_text: "Средство удалённого доступа с функциями блокировки управления, защиты от RAT и безопасности ваших данных.",
+      product2_title: "GRAY_WHALE ANTIVIRUS",
+      product2_text: "Антивирус нового поколения с уникальной функцией антибат-бат и планируемым разделом растермаузер для быстрого восстановления системы.",
+      product3_title: "GRAY_WHALE RUSTY_WINDOW",
+      product3_text: "Модульная система с возможностью установки и автоматического обновления модулей через защищённый сайт, обеспечивающая максимальную гибкость.",
+      news_title: "Новости и планы",
+      news_text: "Мы активно работаем над новыми функциями и готовим запуск раздела растермаузер в ближайшем будущем. Следите за обновлениями и станьте частью нашей истории.",
+      support_title: "Поддержать проект",
+      support_text1: "Если вы хотите поддержать наше развитие и помочь создавать ещё более мощные и полезные продукты, вы можете перевести средства на карту ПриватБанка:",
+      support_text2: "<strong>Номер карты:</strong> 5167 8032 8615 4146<br /><strong>Получатель:</strong> GRAY_WHLAE COMPANY",
+      support_text3: "Спасибо за вашу поддержку! Каждая помощь важна для нас.",
+      support_button: "Перевести на Приват24",
+      contacts_title: "Контакты",
+      contacts_text: 'Telegram: <a href="https://t.me/GRAY_WHALE_company" target="_blank" rel="noopener" style="color:#1de9b6;">@GRAY_WHALE_company</a>'
+    }
+  };
 
-  <button id="lang-btn">RU</button>
+  const langBtn = document.getElementById('lang-btn');
+  let currentLang = 'ru';
 
-  <script>
-    const translations = {
-      ru: {
-        title: "GRAY_WHALE",
-        about: "О нас",
-        products: "Продукты",
-        news: "Новости",
-        support: "Поддержка",
-        contacts: "Контакты",
-        "about-title": "О компании",
-        "about-text": "GRAY_WHALE — инновационная компания, создающая передовые решения в сфере кибербезопасности.",
-        "products-title": "Наши продукты",
-        "news-title": "Новости",
-        "news-text": "Скоро мы выпустим новое обновление для всех наших продуктов!",
-        "support-title": "Техническая поддержка",
-        "support-text": "Вы можете связаться с нами через онлайн-чат внизу экрана.",
-        "contacts-title": "Контакты"
-      },
-      en: {
-        title: "GRAY_WHALE",
-        about: "About",
-        products: "Products",
-        news: "News",
-        support: "Support",
-        contacts: "Contacts",
-        "about-title": "About the Company",
-        "about-text": "GRAY_WHALE is an innovative company creating cutting-edge solutions in cybersecurity.",
-        "products-title": "Our Products",
-        "news-title": "News",
-        "news-text": "We will soon release a new update for all our products!",
-        "support-title": "Technical Support",
-        "support-text": "You can contact us through the online chat at the bottom of the screen.",
-        "contacts-title": "Contacts"
+  langBtn.addEventListener('click', () => {
+    currentLang = currentLang === 'ru' ? 'en' : 'ru';
+    langBtn.textContent = currentLang.toUpperCase();
+
+    document.querySelectorAll('[data-key]').forEach(el => {
+      const key = el.getAttribute('data-key');
+      if (translations[currentLang][key]) {
+        el.innerHTML = translations[currentLang][key];
       }
-    };
-
-    const langBtn = document.getElementById('lang-btn');
-    let currentLang = 'ru';
-
-    langBtn.addEventListener('click', () => {
-      currentLang = currentLang === 'ru' ? 'en' : 'ru';
-      langBtn.textContent = currentLang.toUpperCase();
-      document.querySelectorAll('[data-key]').forEach(el => {
-        const key = el.getAttribute('data-key');
-        if (translations[currentLang][key]) {
-          el.innerHTML = translations[currentLang][key];
-        }
-      });
-      document.documentElement.lang = currentLang;
     });
-  </script>
 
-  <!-- Crisp Chat -->
-  <script type="text/javascript">
-  window.$crisp = [];
-  window.CRISP_WEBSITE_ID = "b18245ec-5420-4334-9b71-9a6636ba09b1";
-  (function() {
-    var d = document;
-    var s = d.createElement("script");
-    s.src = "https://client.crisp.chat/l.js";
-    s.async = 1;
-    d.getElementsByTagName("head")[0].appendChild(s);
-  })();
-  </script>
+    // Меняем атрибут lang в html
+    document.documentElement.lang = currentLang;
+  });
+</script>
+
+<!-- Crisp Chat -->
+<script type="text/javascript">
+window.$crisp = [];
+window.CRISP_WEBSITE_ID = "b18245ec-5420-4334-9b71-9a6636ba09b1";
+(function() {
+  var d = document;
+  var s = d.createElement("script");
+  s.src = "https://client.crisp.chat/l.js";
+  s.async = 1;
+  d.getElementsByTagName("head")[0].appendChild(s);
+})();
+</script>
 </body>
 </html>
-
